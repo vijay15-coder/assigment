@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Employee Directory</h1>
+    <div class="search-filter">
+      <input type="text" id="search-input" placeholder="Search by name or email..." />
+      <button id="filter-btn">Filter</button>
+    </div>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls">
+    <label>Sort:
+      <select id="sort-select">
+        <option value="">--Select--</option>
+        <option value="name">Name</option>
+        <option value="department">Department</option>
+      </select>
+    </label>
+    <label>Show:
+      <select id="items-per-page">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </label>
+    <button id="add-btn">Add Employee</button>
+  </div>
+
+  <!-- Filter Panel -->
+  <div id="filter-panel" class="filter-popup hidden">
+    <span id="close-filter" class="close-btn">&times;</span>
+    <h3>Filter Employees</h3>
+    <label>First Name:
+      <input type="text" id="filter-name" />
+    </label>
+    <label>Department:
+      <input type="text" id="filter-department" />
+    </label>
+    <label>Role:
+      <input type="text" id="filter-role" />
+    </label>
+    <button id="apply-filter">Apply</button>
+    <button id="reset-filter">Reset</button>
+  </div>
+
+  <!-- Employee List -->
+  <div id="employee-list"></div>
+
+  <!-- Pagination -->
+  <div id="pagination-controls"></div>
+
+  <!-- Add/Edit Form -->
+  <div id="form-container" class="hidden">
+    <form id="employee-form">
+      <h2 id="form-title">Add Employee</h2>
+      <label>First Name:
+        <input type="text" id="first-name" required />
+      </label>
+      <label>Last Name:
+        <input type="text" id="last-name" required />
+      </label>
+      <label>Email:
+        <input type="email" id="email" required />
+      </label>
+      <label>Department:
+        <select id="form-department" required>
+          <option value="">--Select--</option>
+          <option value="HR">HR</option>
+          <option value="IT">IT</option>
+          <option value="Finance">Finance</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+      </label>
+      <label>Role:
+        <select id="form-role" required>
+          <option value="">--Select--</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Analyst">Analyst</option>
+          <option value="Designer">Designer</option>
+        </select>
+      </label>
+      <button type="submit">Save</button>
+      <button type="button" id="cancel-btn">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; AJACKUS Company Assignment. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
