@@ -49,7 +49,7 @@ src/main/resources/
 - ✅ Responsive UI (Mobile, Tablet, Desktop)
 - ✅ Pagination (Select: 10 / 25 / 50 / 100 per page)
 - ✅ Form Validations (Required fields + Email format)
-
+- ✅ stores the data in local storage
 ---
 
 ## 📸 Screenshots
@@ -57,13 +57,13 @@ src/main/resources/
 ### 🔹 Dashboard View (Desktop)
 ![Dashboard Desktop](newproject/assets/images/ss1.png)
 
-### 🔹 Add/Edit Form
+### 🔹 Filter & Search
 ![Form View](newproject/assets/images/ss2.png)
 
 ### 🔹 Responsive Mobile View
 ![Mobile View](newproject/assets/images/ss4.png)
 
-### 🔹 Filter & Search
+### 🔹 Add/Edit Form
 ![Filter Search](newproject/assets/images/ss3.png)
 
 ---
